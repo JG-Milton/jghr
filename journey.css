@@ -1,0 +1,266 @@
+/* DEFAUlT SETTINGS, DO NOT TOUCH!! */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body:not(nav) {
+       display: flex;
+       flex-direction: column;
+       gap: 0.6em;
+       box-shadow: 3px 3px 3px darkslategrey;
+       
+  }
+  
+  body {
+    min-height: 100vh;
+    /* background-color: #333; */
+  }
+  
+  /* NAVIGATION BAR, REUSE FOR ALL NECESSARY PAGES */
+  
+  
+  nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px slategray;
+  }
+  
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav li {
+    height: 50px;
+  }
+  
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  nav a:hover{
+    background-color: lightgrey;
+  }
+  
+  nav li:first-child {
+    margin-right: auto;
+  }
+  
+  .logo {
+    max-height: 50px; /* Adjust this value based on your navbar height */
+    height: auto;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 99;
+    background-color: rgb(208, 208, 208, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px lightgray;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidebar li {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .sidebar a {
+    width: 100%;
+  }
+  
+  @media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block !important;
+
+  }
+}
+  
+  @media(max-width: 400px) {
+    .sidebar{
+        width: 100%;
+    }
+  }
+  
+  .menu-button{
+    display: none;
+  }
+/* SECTION 1 */
+
+.title {
+  /* border: solid 2px; */
+  height: auto;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title h1 {
+  font-size: 1.8em;
+  padding: 5px 15px 15px 15px;
+  color: red;
+  text-shadow: 0 0 2px black;
+}
+
+.title p {
+  font-size: 1em;
+}
+
+
+/* ------------SECTION 2---------- */
+
+.career-path {
+  min-height: 90vh;
+  /* border: solid 2px; */
+  background-image: url(image/yourcareer.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+/* ------------------SECTION 3--------------- */
+
+.section3 {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  align-content: center;
+  height: 20vh;
+  text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+  .section3{
+    font-size: 1.6em;
+  }
+  
+}
+
+/* ------------------SECTION 4----------------- */
+
+.section4 {
+  height: auto;
+  display: block;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.4em;
+  padding: 40px 20px 40px 20px;
+  border-bottom: 2px solid black;
+  box-shadow: 2px 2px 5px ;
+}
+
+.info {
+  text-align: center;
+}
+
+.bracket {
+  width: 100%;
+  height: 40vh;
+  margin: 30px 0 30px 0;
+}
+
+.text {
+  /* border: solid 2px; */
+  width: 100%;
+  height: auto;
+  text-align: center;
+  border-image-source: url(image/3.DAMANSARA\ PERDANA.jpg);
+  border: 15px;
+  border-image-slice: 30;
+  border-image-repeat: round;
+}
+
+/* ----------STAFFS--------------- */
+
+.shanker {
+  background-image: url(image/shanker.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.adrian {
+  background-image: url(image/sabah.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aida {
+  background-image: url(image/nurul.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jess {
+  background-image: url(image/jess.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.afiq {
+  background-image: url(image/afiq.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shobhakar {
+  background-image: url(image/shobal.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* --------------------MEDIA QUERIES----------- */
+
+@media (min-width:501px) {
+  .section4 {
+    width: 70vw;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    font-size: 1.6em;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .text {
+    font-size: 1em;
+  }
+}
